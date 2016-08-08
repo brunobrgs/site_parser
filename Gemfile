@@ -4,10 +4,13 @@ gem 'rails', '~> 5.0.0'
 gem 'pg'
 gem 'puma', '~> 3.0'
 gem 'jbuilder', '~> 2.5'
+gem 'validate_url'
 
 group :development, :test do
   gem 'byebug', platform: :mri
   gem 'rspec-rails', '3.5.1'
+  gem 'shoulda-matchers', '~> 3.1'
+  gem 'rails-controller-testing'
 end
 
 group :development do
