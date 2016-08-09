@@ -7,6 +7,7 @@ class SitesController < ApplicationController
     @site = Site.new(site_params)
 
     if @site.save
+      ExtractContent.perform_async(@site.id)
       render json: @site, status: :created
     else
       render json: @site.errors, status: :unprocessable_entity

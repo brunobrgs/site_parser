@@ -1,6 +1,7 @@
 Rails.application.routes.draw do
+  root to: redirect('/v1/sites')
+
   scope '/v1', defaults: { format: 'json' } do
-    root 'sites#index'
     resources :sites, only: [:index, :create]
   end
 end

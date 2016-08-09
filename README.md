@@ -25,6 +25,7 @@ Follow these steps to run for local development:
 ### Create
 - Params: `url(string, url format)`
 - Method: `POST`
+- Content is collected in background (sidekiq), so, it can take some time to process
 
 ## Resource Representation
 Field                           |  Type          | Optional |

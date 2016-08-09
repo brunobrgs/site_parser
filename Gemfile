@@ -5,6 +5,8 @@ gem 'pg'
 gem 'puma', '~> 3.0'
 gem 'jbuilder', '~> 2.5'
 gem 'validate_url'
+gem 'sidekiq'
+gem 'mechanize'
 
 group :development, :test do
   gem 'byebug', platform: :mri
